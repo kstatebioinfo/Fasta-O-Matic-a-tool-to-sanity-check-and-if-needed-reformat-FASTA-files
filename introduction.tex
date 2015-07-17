@@ -4,5 +4,6 @@ Sequence data can be stored as text with each letter representing the nucleic ac
 
 Other decisions about how to represent sequence data can be more arbitrary. For example, any character that is not used as base or an amino acid can be used to indicate the beginning of a new sequence. Additionally text can be wrapped to limit the information content in any one line of a file. The advantage of wrapping text is that some programs can then be designed to work one line at time limiting the burden of each step (e.g. the program would never have to process an entire chromosome of sequence data in a single step). The disadvantage is that code must be slightly more complex to load an entire sequence record into the working memory.
 
-Some format errors are indicative of an attempt to use the wrong format (e.g. the first line is not a FASTA header because it does not begin with a ">" character). However some formatting issues do not necessarily indicate the input file cannot be used (e.g. improperly wrapped/ unwrapped sequence lines, missing final new line characters, unusual new line characters like '\\r').
+Some format errors are indicative of an attempt to use the wrong format (e.g. the first line is not a FASTA header because it does not begin with a ">" character). However some formatting issues do not necessarily indicate the input file cannot be used (e.g. improperly wrapped/ unwrapped sequence lines, missing final new line characters, unusual new line characters like '\verb|\r|').
+  
   
