@@ -8,14 +8,11 @@ Other decisions about how to represent sequence data can be more arbitrary. For 
 
 FASTA file format requirements are very minimal. Each sequence is preceded by a header/description line that begins with a \verb|>|. Sequence can lines can include any standard IUB/IUPAC single character symbols for nucleic acids or amino acids or the ambiguous codes that indicate possible residues or bases. They can also include dashes to indicate alignment gaps. 
 
-It is also common practice to wrap FASTA file sequences lines and to use the first `word' in a header (i.e. any character string to the left of the first space in the header) as the unique sequence id. Although these features are common they are not required leading to format compatibility issues with tools that treat them as required features.
+It is often recommended to wrap FASTA file sequences lines. It is also common practice to use the first `word' in a header (i.e. any character string to the left of the first space in the header) as the unique sequence id. Although these features are common they are not required leading to format compatibility issues with tools that treat these conventions as required features.
 
 \subsection{Customizing FASTA files to ensure that information is properly interpreted by downstream tools}
-Add text defining FASTA format here (also define (1) actual format errors, (2) formats that are not technically wrong but are non-standard and (3) formats that throw errors because an existing tool has a bug (in which case we should modify the FASTA and proceed only if the tool will then correctly import the data and export the desired output)).
 
-Some format errors are indicative of an attempt to use the wrong format (e.g. the first line is not a FASTA header because it does not begin with a "\verb|>|" character). However some formatting issues do not necessarily indicate the input file cannot be used (e.g. improperly wrapped/ unwrapped sequence lines, missing final new line characters, unusual new line characters like '\verb|\r|').
-  
-  
-  
-  
+Regardless of whether a FASTA file is technically improperly formatted or it's format merely violates a popular convention it is critical to quality analysis workflows that data is converted into a format that will be correctly interpreted by downstream tools. Formatting issues can fall into multiple categories including actual format errors, formats that are not technically wrong but are non-standard and formats that throw errors because an existing tool has a bug (in which case we should modify the FASTA and proceed only if the tool will then correctly import the data and export the desired output)). 
+
+Some format errors are more often indicative of a major problem like an attempt to use the wrong data format (e.g. the first line is not a FASTA header because it does not begin with a "\verb|>|" character). These types of errors will be subsequently referred to as fatal. However some formatting issues are common and typically do not indicate the input file is corrupt (e.g. improperly wrapped/ unwrapped sequence lines, missing final new line characters, unusual new line characters like '\verb|\r|'). These issues will be referred to as non-fatal. Fatal formatting issues should cause processing to stop. Non-fatal formatting issues should be automatically corrected according to the most common resolution for this type of error. While downstream processing continues the analyst can double check the automated decision to reformat non-fatal issues. In this manner the workflow would not need to be slowed for trivial reformatting steps and the more rare problems (e.g. when a missing last new line was caused by incomplete file transfer) can still be caught.
   
