@@ -11,14 +11,19 @@ Where possible Fasta-O-Matic was designed to be easy to distribute and use. Fast
 
 The script was designed to efficiently execute the most likely solution given the presence or absence of format issues. Fasta-O-Matic returns the filename of the FASTA file that conforms to the user defined format. If the original file already conforms then Fasta-O-Matic returns the original filename rather than outputting a redundant FASTA file under a new name.
 
-Fasta-O-Matic will exit and report an error if the FASTA file cannot be read, the default or defined output directory cannot be written to or the input FASTA file does not begin with a \verb|>|. The last error is considered the only fatal FASTA format error. \verb|ADD TEST FOR IUPAC BASES AND AMINO ACIDS AND DASHES IN SEQUENCE (NON-HEADER) LINES AS THE SECOND MAJOR FATAL ERROR|.
+Fasta-O-Matic will exit and report an error if the FASTA file cannot be read, the default or defined output directory cannot be written to, the input FASTA file does not begin with a \verb|>| or if the any sequence line includes a non-IUPAC character. The last two errors are considered the fatal FASTA format errors.
 
 Inconsistent or unwrapped sequence lines, spaces in headers and missing or non-standard new lines are considered non-fatal errors. If they are detected the decision is made to reformat as requested, report the issue to the analyst and continue the workflow.
 
 The script also automatically adjusts to run the minimal number of steps sufficient to fix and report format issues. If it is included in the set of QC steps then wrapping is the first format issue tested because while repairing FASTA wrapping both headers and new lines can be corrected. New lines are given priority after wrapping because while repairing new lines it is also trivial to repair headers. Finally, headers are evaluated for format issues. If an early test returns a format issue and launches a reformatting that automatically repairs any remaining format issues Fasta-O-Matic still tests for any additional format errors in the original file. The analyst should be made aware of any unexpected format issues in case they indicate an unexpected issue with the data.
   
+ \subsection{Workflow integration}
+ 
+Sequence FASTA files are often passed as arguments to commandline tools. For example FASTA files can be passed as an argument to bowtie2-build to be indexed as an alignment reference \cite{langmead2012fast} or passed to trimmomatic as adapters to detect sequencing artifacts \cite{bolger2014trimmomatic}. The output filename used by Fast-O-Matic varies to reflect the reformatting performed. For seamless integration into automated workflows Fasta-O-Matic returns the full path of the new properly formatted FASTA file or the original file (if it is already formatted properly). This can be captured as a variable and used as an argument in subsequent commands. The Bash commands below show and example of capturing the FASTA file name as a variable.
+
+\verb|filename="$(python fasta_o_matic.py -f NC_010473_mock_scaffolds.fna -o ~/out_fasta_o_matic -c)"|
   
-  
+\verb|echo $filename|
   
   
   
