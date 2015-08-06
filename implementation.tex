@@ -1,6 +1,6 @@
 \section{Implementation}
 
-In order to fit seamlessly into an analysis workflow a FASTA format tool should should be able to detect which format issues are actually present in the FASTA file. It should only produce a reformatted file if the current file violates user defined format. 
+In order to fit seamlessly into an analysis workflow a FASTA format tool should should be able to detect which format issues are actually present in the FASTA file. It should only produce a reformatted file if the current file violates the user defined format. 
 
 
 \subsection{Portability}
@@ -16,6 +16,7 @@ Fasta-O-Matic will exit and report an error if the FASTA file cannot be read, th
 Inconsistent or unwrapped sequence lines, spaces in headers and missing or non-standard new lines are considered non-fatal errors. If they are detected the decision is made to reformat as requested, report the issue to the analyst and continue the workflow.
 
 It also automatically adjusts to run the minimal number of steps sufficient to fix and report format issues. If it is included in the set of QC steps then wrapping is the first format issue tested because while repairing FASTA wrapping both headers and new lines can be corrected. New lines are given priority after wrapping because while repairing new lines it is also trivial to repair headers. Finally, headers are evaluated for format issues. If a early test returns a format issue and launches a reformatting that automatically repairs any remaining format issues it is still important to test for the remaining format errors. The analyst should be made aware of any unexpected format issues in case they indicate an unexpected issue with the data.
+  
   
   
   
