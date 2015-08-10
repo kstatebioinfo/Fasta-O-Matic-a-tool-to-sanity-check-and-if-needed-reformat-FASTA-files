@@ -2,12 +2,28 @@
 
 \subsection{Data}
 
-Fasta-O-Matic and two pther common FASTA tools that can wrap a FASTA file were tested on the Vicugna_pacos-2.0.1 whole genome shotgun sequence scaffolds because the 2.17 Gb Vicugna pacos genome is large (> 1 Gb) and has many scaffolds (276727). The large genome size and high number of individual sequences should approximate a typical large FASTA file. The FASTA file was downloaded from the NCBI FTP as NW_005882702.1 Vicugna pacos isolate Carlotta (AHFN-0088) Vicugna_pacos-2.0.1 assembly scaffolds.
+Fasta-O-Matic and two pther common FASTA tools that can wrap a FASTA file were tested on the Vicugna_pacos-2.0.1 whole genome shotgun sequence scaffolds because the 2.17 Gb \textit{Vicugna pacos} genome is large (> 1 Gb) and has many scaffolds (276727). The large genome size and high number of individual sequences should approximate a typical large FASTA file. The FASTA file was downloaded from the NCBI FTP as NW\_005882702.1 Vicugna pacos isolate Carlotta (AHFN-0088) Vicugna\_pacos-2.0.1 assembly scaffolds.
 An additional unwrapped sequence was added to the end of the file. This sequence was also missing a newline. Each FASTA record in the file also had spaces within the text of the headers.
 
+Additional simulated FASTA record:
 \begin{verbatim}
 >NW_000000000.0 Vicugna pacos isolate Carlotta (AHFN-0088) FAKE genomic scaffold, Vicugna_pacos-2.0.1 Scaffold-, whole genome shotgun sequence
 ATACAACCATAAAGGTGCTATTCAGTCCATGGTTACAGGACATAACTACAACACACACCCACGTACACATGCGCATGCGCATGCACACACCCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACACCCACGTACGCACACACGTACACGTGTAGGCACGCATTTAGCAAGTATTTAGCTTGCTTAAACAAACCCCCCCTACCCCCCACGAGCCCCACCTTATATACCAGACAGTCTTGCCAAACCCCAAAAACAAGACATAGCGCATAAGCTATAGAACCCGGACAAACCTTTGCCCACAAACCCAACTTCTTAAATAATCACATGGCCAAATCGTACCAATGTGTTACTCTAGTATATTAAAAATATACAGACAGCTATCTCCCTAGATCCGCCAAAATTTTTAAAACAGAATTCAACAACCTTTTTAATGGCACCCCCCCCCCCCATAAATGACC
+\end{verbatim}
+
+Fully re-formatted simulated FASTA record:
+\begin{verbatim}
+>NW_000000000.0_Vicugna_pacos_isolate_Carlotta_(AHFN-0088)_FAKE_genomic_scaffold,_Vicugna_pacos-2.0.1_Scaffold-,_whole_genome_shotgun_sequence
+ATACAACCATAAAGGTGCTATTCAGTCCATGGTTACAGGACATAACTACAACACACACCC
+ACGTACACATGCGCATGCGCATGCACACACCCACGTACACGTACACGTACGCATACACAC
+CCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACAC
+CCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACAC
+CCACGTACGCACACACGTACACGTGTAGGCACGCATTTAGCAAGTATTTAGCTTGCTTAA
+ACAAACCCCCCCTACCCCCCACGAGCCCCACCTTATATACCAGACAGTCTTGCCAAACCC
+CAAAAACAAGACATAGCGCATAAGCTATAGAACCCGGACAAACCTTTGCCCACAAACCCA
+ACTTCTTAAATAATCACATGGCCAAATCGTACCAATGTGTTACTCTAGTATATTAAAAAT
+ATACAGACAGCTATCTCCCTAGATCCGCCAAAATTTTTAAAACAGAATTCAACAACCTTT
+TTAATGGCACCCCCCCCCCCCATAAATGACC
 \end{verbatim}
 
 \subsection{Data}
@@ -18,3 +34,4 @@ Reference from the NW_005882702.1 Vicugna pacos isolate Carlotta (AHFN-0088) Vic
 N50 (bp): 7263804
 Total length (bp) : 2.17
 The number of contigs is: 276727
+  
