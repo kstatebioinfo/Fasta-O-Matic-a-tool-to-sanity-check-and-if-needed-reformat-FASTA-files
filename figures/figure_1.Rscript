@@ -1,0 +1,14 @@
+#!/usr/local/bin/Rscript
+# Makes a charts of tool metrics
+
+pdf('~/Fasta-O-Matic-a-tool-to-sanity-check-and-if-needed-reformat-FASTA-files/figures/Fig_1_resource_metrics.pdf', bg='white', width=12, height=4)
+assemblymetrics <- read.csv("~/read-cleaning-format-conversion/KSU_bioinfo_lab/fasta-o-matic/stats.csv", header=TRUE)
+
+ballgownCol <- rgb(0,0,1,3/4)
+
+barplot(assemblymetrics$max.mem.kbytes,  xlab = "FASTA file tool", ylab = "Max memory (kbytes)", ylim = c(0,140840), names.arg = assemblymetrics$program, col=c(ballgownCol))
+barplot(assemblymetrics$run.time.s,  xlab = "FASTA file tool", ylab = "Run time (s)", ylim = c(0,150), names.arg = assemblymetrics$program, col=c(ballgownCol))
+
+
+
+dev.off()
