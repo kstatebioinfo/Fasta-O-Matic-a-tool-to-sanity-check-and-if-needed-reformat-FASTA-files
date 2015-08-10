@@ -26,16 +26,5 @@ ATACAGACAGCTATCTCCCTAGATCCGCCAAAATTTTTAAAACAGAATTCAACAACCTTT
 TTAATGGCACCCCCCCCCCCCATAAATGACC
 \end{verbatim}
 
-\subsection{Data notes temp}
-
-Reference from the NW\_005882702.1 Vicugna pacos isolate Carlotta (AHFN-0088) Vicugna\_pacos-2.0.1 whole genome shotgun sequence
-
-
-N50 (bp): 7263804
-Total length (bp) : 2.17
-The number of contigs is: 276727
-  
-  
-  
-  
-  
+\subsection{Reformatting tests}
+No tool was found with all of Fasta-O-Matic's functions. Therefore sequence line wrapping was compared between Fasta-O-Matic and two other common reformatting tools, seqtk and seqret. Fasta-O-Matic was run with the \verb|--qc_steps| flag set to either \verb|wrap new_line header_whitespace| (all), \verb|wrap| (W) \verb|new_line| (NL) or \verb|header_whitespace| (HW). Run time and max memory was reported for each tool. Tests were run on a Xeon Phi server with 48x12-core Intel Xeon CPUs, 256GB of RAM,  Linux CentOS 7 and Python2.7.
