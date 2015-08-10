@@ -62,7 +62,7 @@ Output:
 MSG: Each line of the fasta entry must be the same length except the last. Line above #5 'CTAGAGCGCAGCTCTGGGGG..' is 61 != 86 chars...
 \end{verbatim}
 
-EMBOSS Seqret was designed as a very flexible tool to convert from one properly formatted file to another properly but distinctly formatted file. It also was designed to accept poorly formatted data (e.g. a FASTA missing the final new line that is improperly wrapped) and export a reformatted file (e.g. wrapped after 60 bases with a final newline). After submitting an inconsistently wrapped FASTA record that is missing a final new line character, seqret produced a properly formatted FASTA record.
+EMBOSS seqret was designed as a very flexible tool to convert from one properly formatted file to another properly but distinctly formatted file. It also was designed to accept poorly formatted data (e.g. a FASTA missing the final new line that is improperly wrapped) and export a reformatted file (e.g. wrapped after 60 bases with a final newline).
 
 Code:
 
@@ -87,23 +87,9 @@ ATATATATATATATTATTATATATATATTCTCTCTGGGCTCGCGTCTCGCTATTTATATA
 TATATATATATTGCGCTCTCGTCTCCT
 \end{verbatim}
 
-However, Seqret did not log the detected errors in the format. Another feature of Seqret is that an output file is created even if the output is identical to the input. Storing two identical files is an inefficient use of disk space. Seqtk \cite{Li2013} is another example of a tool that can automate FASTA reformatting but does not first check original format or report format issues. 
+However, seqret does not log the detected errors in the format. Another feature of Seqret is that an output file is created even if the output is identical to the input. Storing two identical files is an inefficient use of disk space. Seqtk \cite{Li2013} is another example of a tool that can automate FASTA reformatting but does not first check original format or report format issues. 
 
-Restarting analysis manually after wrapping a FASTA file may only take minutes but the issue is how long it takes the analyst to become available. Likewise, storage is trivial unless the FASTA files in question store whole genomes in which case the burden can add up for a bioinformatics core. Efficiency and automation a crucial as bioinformatics projects become more numerous and time consuming. Many tools can either detect a format issue or repair a format issue. No existing tool was found that both validates FASTA format and reformats automatically only where required for a user defined list of non-fatal FASTA format issues.
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+The process of restarting analysis manually after wrapping a FASTA file may only take minutes. The time consuming aspect of this interruption is the time it takes the analyst to become available and the number of jobs this step must be repeated for. Likewise, storage of one extra FASTA file is trivial unless the FASTA files in question store whole genomes in which case the burden can add up for a bioinformatics core. Efficiency and automation are crucial as bioinformatic analysis projects become more numerous and time consuming. Many tools can either detect a format issue or repair a format issue. No existing tool was found that both validates FASTA format and reformats automatically only where required for a user defined list of non-fatal FASTA format issues.
   
   
   
