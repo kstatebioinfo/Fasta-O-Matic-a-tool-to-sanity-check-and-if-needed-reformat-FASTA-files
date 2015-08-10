@@ -15,7 +15,7 @@ Fasta-O-Matic will exit and report an error if the FASTA file cannot be read, th
 
 Inconsistent or unwrapped sequence lines, spaces in headers and missing or non-standard new lines are considered non-fatal errors. If they are detected the decision is made to reformat as requested, report the issue to the analyst and continue the workflow.
 
-The script also automatically adjusts to run the minimal number of steps sufficient to fix and report format issues. If it is included in the set of QC steps then wrapping is the first format issue tested because while repairing FASTA wrapping both headers and new lines can be corrected. New lines are given priority after wrapping because while repairing new lines it is also trivial to repair headers. Finally, headers are evaluated for format issues. If an early test returns a format issue and launches a reformatting that automatically repairs any remaining format issues Fasta-O-Matic still tests for any additional format errors in the original file. The analyst should be made aware of any unexpected format issues in case they indicate an unexpected issue with the data.
+The script also automatically adjusts to run the minimal number of steps sufficient to fix and report format issues. If it is included in the set of QC steps then wrapping is the first format issue tested because while repairing FASTA wrapping both headers and new lines can be corrected. New lines are given priority after wrapping because while repairing new lines it is also trivial to repair headers. Finally, headers are evaluated for format issues. If an early test returns a format issue and launches a reformatting that automatically repairs any remaining format issues then Fasta-O-Matic still tests for any additional format errors in the original file. The analyst should be made aware of any unexpected format issues in case they indicate an unexpected issue with the data.
   
 \subsection{Workflow integration}
  
@@ -25,6 +25,7 @@ Sequence FASTA files are often passed as arguments to commandline tools. For exa
 filename="$(python fasta_o_matic.py -f NC_010473_mock_scaffolds.fna -o ~/out_fasta_o_matic -c)"
 echo $filename
 \end{verbatim}
+  
   
   
   
