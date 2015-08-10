@@ -1,6 +1,6 @@
 \section{Implementation}
 
-In order to fit seamlessly into an analysis workflow a FASTA format tool should should be able to detect which format issues are actually present in the FASTA file. It should only produce a reformatted file if the current file violates the user defined format. 
+Fasta-O-Matic was designed fit seamlessly into an analysis workflow. It detects which format issues are actually present in the FASTA file. Then only produces a reformatted file if the current file violates the user defined format requirements. 
 
 
 \subsection{Portability}
@@ -25,6 +25,7 @@ Sequence FASTA files are often passed as arguments to commandline tools. For exa
 filename="$(python fasta_o_matic.py -f NC_010473_mock_scaffolds.fna -o ~/out_fasta_o_matic -c)"
 echo $filename
 \end{verbatim}
+  
   
   
   
