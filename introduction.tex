@@ -19,7 +19,7 @@ Some format errors indicate a major problem like an attempt to use the wrong dat
   
 \subsection{Existing tools}
 
-Many bioinformatics tools already address FASTA format inconsistencies. However many tools either halt and exit with an error (e.g. BioPerl) or can produce can reformatted output FASTA but cannot determine if there is a formatting issue to begin with (e.g. EMBOSS Seqret). 
+Many bioinformatics tools already address FASTA format inconsistencies. However many tools either halt and exit with an error (e.g. BioPerl) or can produce can reformatted output FASTA but cannot determine if there is a formatting issue to begin with (e.g. EMBOSS Seqret \cite{PMID:10827456}). 
 
 The BioPerl module \verb|DB::Fasta| will halt if a FASTA is inconsistently wrapped or if a line of sequence is too long (as in an unwrapped genome FASTA). This has the disadvantage of requiring intervention to wrap and restart analysis.
 
@@ -91,6 +91,7 @@ However, Seqret did not log the detected errors in the format. Another feature o
 
 Restarting analysis manually after wrapping a FASTA file may only take minutes but the issue is how long it takes the analyst to become available. Likewise, storage is trivial unless the FASTA files in question store whole genomes in which case the burden can add up for a bioinformatics core. Efficiency and automation a crucial as bioinformatics projects become more numerous and time consuming. Many tools can either detect a format issue or repair a format issue. No existing tool was found that both validates FASTA format and reformats automatically only where required for a user defined list of non-fatal FASTA format issues.
 
+  
   
   
   
