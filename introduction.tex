@@ -21,7 +21,7 @@ Some format errors often indicate a major problem like an attempt to use the wro
 
 Many bioinformatics tools already address FASTA format inconsistencies. However many tools either halt and exit with an error (e.g. BioPerl) or can produce can reformatted output FASTA but cannot determine if there is a formatting issue to begin with (e.g. EMBOSS Seqret). 
 
-The BioPerl module \verb{DB::Fasta} will halt if a FASTA is inconsistently wrapped or if a line of sequence is too long (as in an unwrapped genome FASTA). This has the disadvantage of requiring intervention to wrap and restart analysis.
+The BioPerl module \verb|DB::Fasta| will halt if a FASTA is inconsistently wrapped or if a line of sequence is too long (as in an unwrapped genome FASTA). This has the disadvantage of requiring intervention to wrap and restart analysis.
 
 Code:
 \begin{verbatim}
@@ -91,6 +91,7 @@ However, Seqret did not log the detected errors in the format. In many cases mis
 
 Storage is trivial unless the FASTA files in question store whole genomes in which case the burden can add up for a bioinformatics core. Overall, while many tools can either detect a format issue or repair a format issue no existing tool was found that both validates FASTA format and reformats automatically only where required for a user defined list of FASTA format issues.
 
+  
   
   
   
