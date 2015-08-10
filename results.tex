@@ -11,6 +11,13 @@ Additional simulated FASTA record:
 ATACAACCATAAAGGTGCTATTCAGTCCATGGTTACAGGACATAACTACAACACACACCCACGTACACATGCGCATGCGCATGCACACACCCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACACCCACGTACGCACACACGTACACGTGTAGGCACGCATTTAGCAAGTATTTAGCTTGCTTAAACAAACCCCCCCTACCCCCCACGAGCCCCACCTTATATACCAGACAGTCTTGCCAAACCCCAAAAACAAGACATAGCGCATAAGCTATAGAACCCGGACAAACCTTTGCCCACAAACCCAACTTCTTAAATAATCACATGGCCAAATCGTACCAATGTGTTACTCTAGTATATTAAAAATATACAGACAGCTATCTCCCTAGATCCGCCAAAATTTTTAAAACAGAATTCAACAACCTTTTTAATGGCACCCCCCCCCCCCATAAATGACC
 \end{verbatim}
 
+\subsection{Reformatting tests}
+No tool was found with all of Fasta-O-Matic's functions. Therefore sequence line wrapping was compared between Fasta-O-Matic and two other common reformatting tools, seqtk and seqret. Fasta-O-Matic was run with the \verb|--qc_steps| flag set to either \verb|wrap new_line header_whitespace| (all), \verb|wrap| (W) \verb|new_line| (NL) or \verb|header_whitespace| (HW). Run time and max memory was reported for each tool. Tests were run on a Xeon Phi server with 48x12-core Intel Xeon CPUs, 256GB of RAM,  Linux CentOS 7 and Python2.7.
+
+\subsection{Comparison between results}
+
+All tools could reformat the improperly wrapped FASTA file. Fasta-O-Matics had the lowest maximum memory requirements which may be useful if working on a large genome on a local machine or cluster headnode where memory usage is restricted. Fasta-O-Matic took several minutes rather than seconds (seqtk and seqret took <13 s). 
+
 Fully re-formatted simulated FASTA record:
 \begin{verbatim}
 >NW_000000000.0_Vicugna_pacos_isolate_Carlotta_(AHFN-0088)_FAKE_genomic_scaffold,_Vicugna_pacos-2.0.1_Scaffold-,_whole_genome_shotgun_sequence
@@ -25,6 +32,3 @@ ACTTCTTAAATAATCACATGGCCAAATCGTACCAATGTGTTACTCTAGTATATTAAAAAT
 ATACAGACAGCTATCTCCCTAGATCCGCCAAAATTTTTAAAACAGAATTCAACAACCTTT
 TTAATGGCACCCCCCCCCCCCATAAATGACC
 \end{verbatim}
-
-\subsection{Reformatting tests}
-No tool was found with all of Fasta-O-Matic's functions. Therefore sequence line wrapping was compared between Fasta-O-Matic and two other common reformatting tools, seqtk and seqret. Fasta-O-Matic was run with the \verb|--qc_steps| flag set to either \verb|wrap new_line header_whitespace| (all), \verb|wrap| (W) \verb|new_line| (NL) or \verb|header_whitespace| (HW). Run time and max memory was reported for each tool. Tests were run on a Xeon Phi server with 48x12-core Intel Xeon CPUs, 256GB of RAM,  Linux CentOS 7 and Python2.7.
