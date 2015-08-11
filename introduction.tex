@@ -30,11 +30,13 @@ use Bio::Seq;
 use Bio::SeqIO;
 use Bio::DB::Fasta; #makes a searchable db from FASTA file
 my $out_file_temp = '/home/bionano/test_db/all.fa';
-my $seq_out = Bio::SeqIO->new('-file' => ">$out_file_temp",'-format' => 'fasta');#Create new 
-#FASTA outfile object
-my $db = Bio::DB::Fasta->new("/home/bionano/test_db/miswrapped.fa");#Load FASTA file as DB
+#Create new FASTA outfile object
+my $seq_out = Bio::SeqIO->new('-file' => ">$out_file_temp",'-format' => 'fasta');
+#Load FASTA file as DB
+my $db = Bio::DB::Fasta->new("/home/bionano/test_db/miswrapped.fa");
 my $seq_obj = $db->get_Seq_by_id('seq'); # get FASTA records using headers 
-#(where header = first 'word' so really header whitespace should also be removed for this file)
+#(where header = first 'word' so really header whitespace should also be 
+#removed for this file)
 $seq_out->write_seq($seq_obj);
 \end{verbatim}
 
@@ -59,7 +61,8 @@ CTACGACAGTcatgcagactagcagt
 Output:
 \begin{verbatim}
 ------------- EXCEPTION -------------
-MSG: Each line of the fasta entry must be the same length except the last. Line above #5 'CTAGAGCGCAGCTCTGGGGG..' is 61 != 86 chars...
+MSG: Each line of the fasta entry must be the same length except the last. 
+Line above #5 'CTAGAGCGCAGCTCTGGGGG..' is 61 != 86 chars...
 \end{verbatim}
 
 EMBOSS seqret was designed as a very flexible tool to convert from one properly formatted file to another properly but distinctly formatted file. It also was designed to accept poorly formatted data (e.g. a FASTA missing the final new line that is improperly wrapped) and export a reformatted file (e.g. wrapped after 60 bases with a final newline).
@@ -92,6 +95,7 @@ However, seqret does not log the detected errors in the format. Another feature 
 Another case to note is when an improperly formatted FASTA file is actually distributed as a component of a bioinformatics tool. Trimmomatic adapter sequences \cite{bolger2014trimmomatic}, for example, are distributed versions of the proprietary Illumina sequencing adapters but the FASTA files are missing final new lines. This can cause issues downstream if a workflow includes common analysis techniques like FASTA file concatenation. 
 
 The process of restarting analysis manually after wrapping a FASTA file may only take minutes. The time consuming aspect of this interruption is the time it takes the analyst to become available and the number of jobs this step must be repeated for. Likewise, storage of one extra FASTA file is trivial unless the FASTA file in question stores a whole genome in which case the burden can add up for a bioinformatics core. Efficiency and automation are crucial as bioinformatic analysis projects become more numerous and time consuming. Many tools can either detect a format issue or repair a format issue. No existing tool was found that both validates FASTA format and reformats automatically only where required for a user defined list of non-fatal FASTA format issues.
+  
   
   
   
