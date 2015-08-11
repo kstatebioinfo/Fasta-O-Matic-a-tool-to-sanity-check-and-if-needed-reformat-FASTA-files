@@ -25,9 +25,10 @@ No tool was found with all of Fasta-O-Matic's functions. Therefore sequence line
 
 All tools could reformat the improperly wrapped FASTA file. Fasta-O-Matic had the lowest maximum memory requirements (Figure 1, Table 1). This may be useful if working on a large genome on a local machine or cluster headnode where memory usage is restricted. Fasta-O-Matic took several minutes rather than seconds (seqtk and seqret took <13 s) (Figure 2, Table 1). 
 
-Fully re-formatted simulated FASTA record:
+Fully re-formatted simulated FASTA record (backslashes are used to indicate a new line that is for display in the article rather than the new lines being included in the actual FASTA record):
 \begin{verbatim}
->NW_000000000.0_Vicugna_pacos_isolate_Carlotta_(AHFN-0088)_FAKE_genomic_scaffold,_Vicugna_pacos-2.0.1_Scaffold-,_whole_genome_shotgun_sequence
+>NW_000000000.0_Vicugna_pacos_isolate_Carlotta_(AHFN-0088)_FAKE_genomic_scaffold,_\
+Vicugna_pacos-2.0.1_Scaffold-,_whole_genome_shotgun_sequence
 ATACAACCATAAAGGTGCTATTCAGTCCATGGTTACAGGACATAACTACAACACACACCC
 ACGTACACATGCGCATGCGCATGCACACACCCACGTACACGTACACGTACGCATACACAC
 CCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACAC
@@ -39,6 +40,7 @@ ACTTCTTAAATAATCACATGGCCAAATCGTACCAATGTGTTACTCTAGTATATTAAAAAT
 ATACAGACAGCTATCTCCCTAGATCCGCCAAAATTTTTAAAACAGAATTCAACAACCTTT
 TTAATGGCACCCCCCCCCCCCATAAATGACC
 \end{verbatim}
+  
   
   
   
