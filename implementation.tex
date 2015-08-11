@@ -23,11 +23,11 @@ All format issues are reported in the programs logs in case they indicate an une
  
 Sequence FASTA files are often passed as arguments to commandline tools. For example FASTA files can be passed as an argument to bowtie2-build to be indexed as an alignment reference \cite{langmead2012fast} or passed to trimmomatic as adapters to detect sequencing artifacts. The output filename used by Fast-O-Matic varies to reflect the reformatting performed. For seamless integration into automated workflows Fasta-O-Matic returns the full path of the new properly formatted FASTA file or the original file (if it is already formatted properly). This can be captured as a variable and used as an argument in subsequent commands. The Bash commands below show and example of capturing the FASTA file name as a variable.
 
-Code (backslashes are used to indicate a new line that is for display in the article rather than the new lines being included in the actual code):
+Code :
 \begin{verbatim}
-filename="$(python fasta_o_matic.py -f NC_010473_mock_scaffolds.fna \
--o ~/out_fasta_o_matic -c)"
+filename="$(python fasta_o_matic.py -f NC_010473_mock_scaffolds.fna -o ~/out_fasta_o_matic -c)"
 echo $filename
 \end{verbatim}
+  
   
   
