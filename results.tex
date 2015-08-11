@@ -12,7 +12,7 @@ ATACAACCATAAAGGTGCTATTCAGTCCATGGTTACAGGACATAACTACAACACACACCCACGTACACATGCGCATGCGC
 \end{verbatim}
 
 \subsection{Reformatting tests}
-No tool was found with all of Fasta-O-Matic's functions. Therefore sequence line wrapping was compared between Fasta-O-Matic and two other common reformatting tools, seqtk and seqret. Fasta-O-Matic was run with the \verb|--qc_steps| flag set to either \verb|wrap new_line header_whitespace| (all), \verb|wrap| (W) \verb|new_line| (NL) or \verb|header_whitespace| (HW). Run time and max memory was reported for each tool. Tests were run on a Xeon Phi server with 48x12-core Intel Xeon CPUs, 256GB of RAM,  Linux CentOS 7 and Python2.7.
+No tool was found with all of Fasta-O-Matic's functions. Therefore sequence line wrapping was compared between Fasta-O-Matic and two other common reformatting tools, seqtk and seqret. Fasta-O-Matic was run with the \verb|--qc_steps| flag set to either \verb|wrap new_line header_whitespace| (all), \verb|wrap| (W) \verb|new_line| (NL) or \verb|header_whitespace| (HW). Seqtk was run with the arguments \verb|seq -l 60|. Seqret was run using only the \verb|-sequence| and \verb|-outseq| arguments. Code used in tests or to produce figure can be found on \href{http://github}{https://github.com/kstatebioinfo/Fasta-O-Matic-a-tool-to-sanity-check-and-if-needed-reformat-FASTA-files/tree/master/figures}.Run time and max memory was reported for each tool. Tests were run on a Xeon Phi server with 48x12-core Intel Xeon CPUs, 256GB of RAM, Linux CentOS 7 and Python2.7.
 
 \subsection{Comparison between results}
 
@@ -32,6 +32,7 @@ ACTTCTTAAATAATCACATGGCCAAATCGTACCAATGTGTTACTCTAGTATATTAAAAAT
 ATACAGACAGCTATCTCCCTAGATCCGCCAAAATTTTTAAAACAGAATTCAACAACCTTT
 TTAATGGCACCCCCCCCCCCCATAAATGACC
 \end{verbatim}
+  
   
   
   
