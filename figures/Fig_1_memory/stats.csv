@@ -1,0 +1,7 @@
+program,max mem kbytes,run time s,CPU percent					
+Fasta-O-Matic (HW),7064,111.67,100
+Fasta-O-Matic (NL),7068,93.20,100				
+Fasta-O-Matic (all),10980,146.03,88
+Fasta-O-Matic (W),11096,140.90,87
+seqtk,38352,3.17,100
+seqret,137840,12.50,39
