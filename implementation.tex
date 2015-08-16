@@ -15,7 +15,9 @@ Fasta-O-Matic will exit and report an error if the FASTA file cannot be read, th
 
 Inconsistent or unwrapped sequence lines, spaces in headers and missing or non-standard new lines are considered non-fatal errors. Testing for these issues is optional. If they are detected the decision is made to reformat as requested, report the issue to the analyst and continue the workflow.
 
-The script also automatically adjusts to run the minimal number of steps sufficient to fix and report format issues. If it is included in the set of QC steps then wrapping is the first format issue tested because while repairing FASTA wrapping both headers and new lines can be corrected. New lines are given priority after wrapping because while repairing new lines it is also trivial to repair headers. Finally, headers are evaluated for format issues. If an early test returns a format issue and launches a reformatting that automatically repairs any remaining format issues then Fasta-O-Matic still tests for any additional format errors in the original file. 
+Testing the uniqueness of the header/description line can return a non-fatal warning and a reformatted file or a fatal error. Testing for uniqueness is optional. If the first word in each header/description line is unique then it follows that all description lines are unique. If the first words are not unique then it is possible that is because the header ids include whitespace \verb|>seq 1| or \verb|> seq 1|. In this case a resolution is to replace the whitespace with a character. Fasta-O-Matic replaces the whitespace with \verb|_| and retests for the uniqueness of the first words in the headers. If this version passes than the user is warned that whitespace effected header uniqueness and was removed from headers. If removing whitespace also fails to resolve the issue the lack of uniqueness is considered a fatal error. The fatal error is reported and the program halts.
+
+The script also automatically adjusts to run the minimal number of steps sufficient to fix and report format issues. If it is included in the set of QC steps then wrapping is the first format issue tested because while repairing FASTA wrapping both headers and new lines can be corrected. New lines are given priority after wrapping because while repairing new lines it is also trivial to repair headers. Next, uniqueness of the header lines is tested. Finally, headers are evaluated for white space. If an early test returns a format issue and launches a reformatting that automatically repairs any remaining format issues then Fasta-O-Matic still tests for any additional format errors in the original file. 
 
 All format issues are reported in the programs logs in case they indicate an unexpected issue with the data. Logs can be optionally color coded so that red indicates errors, yellow indicates warnings (e.g. a non-fatal issue was found and automatically reformatted) and green indicates status information. This method of logging is designed to draw the attention of the bioinformatics analyst to relevant warnings or errors even if they have grown accustomed to seeing Fasta-O-Matic output frequently.
   
@@ -23,7 +25,15 @@ All format issues are reported in the programs logs in case they indicate an une
  
 Sequence FASTA files are often passed as arguments to commandline tools. For example FASTA files can be passed as an argument to bowtie2-build to be indexed as an alignment reference \cite{langmead2012fast} or passed to trimmomatic as adapters to detect sequencing artifacts. The output filename used by Fast-O-Matic varies to reflect the reformatting performed. For seamless integration into automated workflows Fasta-O-Matic returns the full path of the new properly formatted FASTA file or the original file (if it is already formatted properly). This can be captured as a variable and used as an argument in subsequent commands. The Bash commands below show and example of capturing the FASTA file name as a variable.
 
+Code :
 \begin{verbatim}
 filename="$(python fasta_o_matic.py -f NC_010473_mock_scaffolds.fna -o ~/out_fasta_o_matic -c)"
 echo $filename
 \end{verbatim}
+  
+  
+  
+  
+  
+  
+  

@@ -2,7 +2,7 @@
 
 \subsection{Data}
 
-FASTA format tools were tested on the Vicugna\_pacos-2.0.1 whole genome shotgun sequence scaffolds because the 2.17 Gb \textit{Vicugna pacos} genome is large (> 1 Gb) and has many scaffolds (276727) \cite{Lindblad_Toh_2011}. The large genome size and high number of individual sequences should approximate a typical large FASTA file. The FASTA file was downloaded from the NCBI FTP as NW\_005882702.1 \textit{Vicugna pacos} isolate Carlotta (AHFN-0088) Vicugna\_pacos-2.0.1 assembly scaffolds.
+FASTA format tools were tested on the Vicugna\_pacos-2.0.1 whole genome shotgun sequence scaffolds because the 2.17 Gb \textit{Vicugna pacos} genome is large ($>$ 1 Gb) and has many scaffolds (276727) \cite{Lindblad_Toh_2011}. The large genome size and high number of individual sequences should approximate a typical large FASTA file. The FASTA file was downloaded from the NCBI FTP as NW\_005882702.1 \textit{Vicugna pacos} isolate Carlotta (AHFN-0088) Vicugna\_pacos-2.0.1 assembly scaffolds.
 An additional unwrapped sequence was added to the end of the file. This sequence was also missing a newline. Each FASTA record in the file also had spaces within the text of the headers.
 
 Additional simulated FASTA record:
@@ -16,11 +16,11 @@ No tool was found with all of Fasta-O-Matic's functions. Therefore sequence line
 
 \subsection{Comparison between results}
 
-All tools could reformat the improperly wrapped FASTA file. Fasta-O-Matic had the lowest maximum memory requirements (Figure 1, Table 1). This may be useful if working on a large genome on a local machine or cluster headnode where memory usage is restricted. Fasta-O-Matic took several minutes rather than seconds (seqtk and seqret took <13 s) (Figure 2, Table 1). 
+All tools could reformat the improperly wrapped FASTA file. Fasta-O-Matic had the lowest maximum memory requirements (Figure 1, Table 1). This may be useful if working on a large genome on a local machine or cluster headnode where memory usage is restricted. Fasta-O-Matic took several minutes rather than seconds (seqtk and seqret took $<$ 13 s) (Figure 2, Table 1). 
 
-Fully re-formatted simulated FASTA record:
+Fully re-formatted simulated FASTA record (backslashes are used to indicate a new line that is for display in the article rather than the new lines being included in the actual FASTA record):
 \begin{verbatim}
->NW_000000000.0_Vicugna_pacos_isolate_Carlotta_(AHFN-0088)_FAKE_genomic_scaffold,_Vicugna_pacos-2.0.1_Scaffold-,_whole_genome_shotgun_sequence
+>NW_000000000.0_Vicugna_pacos_isolate_Carlotta_(AHFN-0088)_FAKE_genomic_scaffold,_Vicugna_pacos-2.1_Scaffold-,_whole_genome_shotgun_sequence
 ATACAACCATAAAGGTGCTATTCAGTCCATGGTTACAGGACATAACTACAACACACACCC
 ACGTACACATGCGCATGCGCATGCACACACCCACGTACACGTACACGTACGCATACACAC
 CCACGTACACGTACACGTACGCATACACACCCACGTACACGTACACGTACGCATACACAC
@@ -32,6 +32,16 @@ ACTTCTTAAATAATCACATGGCCAAATCGTACCAATGTGTTACTCTAGTATATTAAAAAT
 ATACAGACAGCTATCTCCCTAGATCCGCCAAAATTTTTAAAACAGAATTCAACAACCTTT
 TTAATGGCACCCCCCCCCCCCATAAATGACC
 \end{verbatim}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
