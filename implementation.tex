@@ -1,19 +1,19 @@
 \section{Implementation}
 
-Fasta-O-Matic was designed to fit seamlessly into an analysis workflow. It detects which format issues are actually present in the FASTA file. Then only produces a reformatted file if the current file violates the user defined format requirements. 
+Fasta-O-Matic was designed to fit seamlessly into an analysis workflow. It detects which format issues are actually present in the FASTA file and then only produces a reformatted file if the current file violates the user defined format requirements. 
 
 
 \subsection{Portability}
 
-Where possible Fasta-O-Matic was designed to be easy to distribute and use. Fasta-O-Matic is distributed on GitHub under a the MIT license to allow for easy access to or customization of the code. The tool was also built and tested on both Python2.7 and and Python3.3 to minimize incompatibility with existing linux environments. The script generates complete help menus when called from the command line with the \verb|--help| command and from within python with \verb|help(fasta_o_matic)|. Additionally, Fasta-O-Matic includes a sample FASTA file with missing newlines, inconsistent wrapping and spaces in headers and a tutorial which describes how to reformat the sample. These features ensure that Fasta-O-Matic is easy to incorporate into existing workflows.
+Where possible Fasta-O-Matic was designed to be easy to distribute and use. Fasta-O-Matic is distributed on GitHub under the MIT license to allow for easy access to or customization of the code. The tool was also built and tested on both Python2.7 and and Python3.3 to minimize incompatibility with existing linux environments. The script generates complete help menus when called from the command line with the \verb|--help| command and from within python with \verb|help(fasta_o_matic)|. Additionally, Fasta-O-Matic includes a sample FASTA file with missing newlines, inconsistent wrapping and spaces in headers along with a tutorial which describes how to reformat the sample. These features ensure that Fasta-O-Matic is easy to incorporate into existing workflows.
 
 \subsection{Automate where appropriate} 
 
-The script was designed to efficiently execute the most likely solution given the presence or absence of format issues. Fasta-O-Matic returns the filename of the FASTA file that conforms to the user defined format. If the original file already conforms then Fasta-O-Matic returns the original filename rather than outputting a redundant FASTA file under a new name.
+The script was designed to efficiently execute the most likely solution given the presence or absence of format issues. Fasta-O-Matic returns a filename for the output FASTA file that conforms to the user defined format. If the original file already conforms, then Fasta-O-Matic returns the original filename rather than outputting a redundant FASTA file under a new name.
 
-Fasta-O-Matic will exit and report an error if the FASTA file cannot be read, the default or defined output directory cannot be written to, the input FASTA file does not begin with a \verb|>| or if the any sequence line includes a non-IUPAC character. The last two errors are considered the fatal FASTA format errors.
+Fasta-O-Matic will exit and report an error if the FASTA file cannot be read, the default or defined output directory cannot be written to, the input FASTA file does not begin with a \verb|>| or if any sequence line includes a non-IUPAC character. The last two errors are considered to be fatal FASTA format errors.
 
-Inconsistent or unwrapped sequence lines, spaces in headers and missing or non-standard new lines are considered non-fatal errors. Testing for these issues is optional. If they are detected the decision is made to reformat as requested, report the issue to the analyst and continue the workflow.
+Inconsistent or unwrapped sequence lines, spaces in headers and missing or non-standard new lines are considered non-fatal errors. Testing for these issues is optional. If they are detected, the decision is made to reformat as requested, report the issue to the analyst and continue the workflow.
 
 Testing the uniqueness of the header/description line can return a non-fatal warning and a reformatted file or a fatal error. Testing for uniqueness is optional. If the first word in each header/description line is unique then it follows that all description lines are unique. If the first words are not unique then it is possible that is because the header ids include whitespace \verb|>seq 1| or \verb|> seq 1|. In this case a resolution is to replace the whitespace with a character. Fasta-O-Matic replaces the whitespace with \verb|_| and retests for the uniqueness of the first words in the headers. If this version passes than the user is warned that whitespace effected header uniqueness and was removed from headers. If removing whitespace also fails to resolve the issue the lack of uniqueness is considered a fatal error. The fatal error is reported and the program halts.
 
@@ -31,6 +31,7 @@ Code :
 filename="$(python fasta_o_matic.py -f NC_010473_mock_scaffolds.fna -o ~/out_fasta_o_matic -c)"
 echo $filename
 \end{verbatim}
+  
   
   
   
