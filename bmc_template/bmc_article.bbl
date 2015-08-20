@@ -1,0 +1,571 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{11}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem{jaffe2012fastg}
+\begin{botherref}
+\oauthor{\bsnm{Jaffe}, \binits{D.}}, et al.:
+{The FASTG Format Specification (v1.00). http}
+(2012)
+\end{botherref}
+\endbibitem
+
+%%% 2
+\bibitem{FASTAformat}
+\begin{botherref}
+\oauthor{\bsnm{NCBI}}:
+{Accepted Input Formats}.
+\url{http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml}
+\end{botherref}
+\endbibitem
+
+%%% 3
+\bibitem{comm1970abbreviations}
+\begin{barticle}
+\bauthor{\bsnm{Comm}, \binits{I.-I.}}:
+\batitle{{Abbreviations and symbols for nucleic acids, polynucleotides, and
+  their constituents}}.
+\bjtitle{Biochemistry}
+\bvolume{9}(\bissue{20}),
+\bfpage{4022}--\blpage{4027}
+(\byear{1970})
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem{bioperl}
+\begin{barticle}
+\bauthor{\bsnm{Stajich}, \binits{J.E.}},
+\bauthor{\bsnm{Block}, \binits{D.}},
+\bauthor{\bsnm{Boulez}, \binits{K.}},
+\bauthor{\bsnm{Brenner}, \binits{S.E.}},
+\bauthor{\bsnm{Chervitz}, \binits{S.A.}},
+\bauthor{\bsnm{Dagdigian}, \binits{C.}},
+\bauthor{\bsnm{Fuellen}, \binits{G.}},
+\bauthor{\bsnm{Gilbert}, \binits{J.G.}},
+\bauthor{\bsnm{Korf}, \binits{I.}},
+\bauthor{\bsnm{Lapp}, \binits{H.}},
+\bauthor{\bsnm{Lehvaslaiho}, \binits{H.}},
+\bauthor{\bsnm{Matsalla}, \binits{C.}},
+\bauthor{\bsnm{Mungall}, \binits{C.J.}},
+\bauthor{\bsnm{Osborne}, \binits{B.I.}},
+\bauthor{\bsnm{Pocock}, \binits{M.R.}},
+\bauthor{\bsnm{Schattner}, \binits{P.}},
+\bauthor{\bsnm{Senger}, \binits{M.}},
+\bauthor{\bsnm{Stein}, \binits{L.D.}},
+\bauthor{\bsnm{Stupka}, \binits{E.}},
+\bauthor{\bsnm{Wilkinson}, \binits{M.D.}},
+\bauthor{\bsnm{Birney}, \binits{E.}}:
+\batitle{{The {B}ioperl toolkit: {P}erl modules for the life sciences.}}
+\bjtitle{Genome Res}
+\bvolume{12}(\bissue{10}),
+\bfpage{1611}--\blpage{8}
+(\byear{2002})
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem{bioperl2}
+\begin{barticle}
+\bauthor{\bsnm{Stein}, \binits{L.D.}},
+\bauthor{\bsnm{Mungall}, \binits{C.}},
+\bauthor{\bsnm{Shu}, \binits{S.}},
+\bauthor{\bsnm{Caudy}, \binits{M.}},
+\bauthor{\bsnm{Mangone}, \binits{M.}},
+\bauthor{\bsnm{Day}, \binits{A.}},
+\bauthor{\bsnm{Nickerson}, \binits{E.}},
+\bauthor{\bsnm{Stajich}, \binits{J.E.}},
+\bauthor{\bsnm{Harris}, \binits{T.W.}},
+\bauthor{\bsnm{Arva}, \binits{A.}},
+\bauthor{\bsnm{Lewis}, \binits{S.}}:
+\batitle{{The generic genome browser: a building block for a model organism
+  system database.}}
+\bjtitle{Genome Res}
+\bvolume{12}(\bissue{10}),
+\bfpage{1599}--\blpage{610}
+(\byear{2002})
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem{bioperl3}
+\begin{barticle}
+\bauthor{\bsnm{Stajich}, \binits{J.E.}},
+\bauthor{\bsnm{Hahn}, \binits{M.W.}}:
+\batitle{{Disentangling the effects of demography and selection in human
+  history.}}
+\bjtitle{Molecular biology and evolution}
+\bvolume{22}(\bissue{1}),
+\bfpage{63}--\blpage{73}
+(\byear{2005}).
+doi:\doiurl{10.1093/molbev/msh252}
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem{PMID:10827456}
+\begin{barticle}
+\bauthor{\bsnm{Rice}, \binits{P.}},
+\bauthor{\bsnm{Longden}, \binits{I.}},
+\bauthor{\bsnm{Bleasby}, \binits{A.}}:
+\batitle{{EMBOSS: the European Molecular Biology Open Software Suite}}.
+\bjtitle{Trends in genetics : TIG}
+\bvolume{16}(\bissue{6}),
+\bfpage{276}--\blpage{277}
+(\byear{2000}).
+doi:\doiurl{10.1016/s0168-9525(00)02024-2}
+\end{barticle}
+\endbibitem
+
+%%% 8
+\bibitem{Li2013}
+\begin{botherref}
+\oauthor{\bsnm{Li}, \binits{H.}}:
+{seqtk}.
+GitHub
+(2013).
+\url{https://github.com/lh3/seqtk}
+\end{botherref}
+\endbibitem
+
+%%% 9
+\bibitem{bolger2014trimmomatic}
+\begin{botherref}
+\oauthor{\bsnm{Bolger}, \binits{A.M.}},
+\oauthor{\bsnm{Lohse}, \binits{M.}},
+\oauthor{\bsnm{Usadel}, \binits{B.}}:
+{Trimmomatic: a flexible trimmer for Illumina sequence data}.
+Bioinformatics,
+170
+(2014)
+\end{botherref}
+\endbibitem
+
+%%% 10
+\bibitem{langmead2012fast}
+\begin{barticle}
+\bauthor{\bsnm{Langmead}, \binits{B.}},
+\bauthor{\bsnm{Salzberg}, \binits{S.L.}}:
+\batitle{{Fast gapped-read alignment with Bowtie 2}}.
+\bjtitle{Nature methods}
+\bvolume{9}(\bissue{4}),
+\bfpage{357}--\blpage{359}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem{Lindblad_Toh_2011}
+\begin{barticle}
+\bauthor{\bsnm{Lindblad-Toh}, \binits{K.}},
+\bauthor{\bsnm{Garber}, \binits{M.}},
+\bauthor{\bsnm{Zuk}, \binits{O.}},
+\bauthor{\bsnm{Lin}, \binits{M.F.}},
+\bauthor{\bsnm{Parker}, \binits{B.J.}},
+\bauthor{\bsnm{Washietl}, \binits{S.}},
+\bauthor{\bsnm{Kheradpour}, \binits{P.}},
+\bauthor{\bsnm{Ernst}, \binits{J.}},
+\bauthor{\bsnm{Jordan}, \binits{G.}},
+\bauthor{\bsnm{Mauceli}, \binits{E.}},
+\bauthor{\bsnm{Ward}, \binits{L.D.}},
+\bauthor{\bsnm{Lowe}, \binits{C.B.}},
+\bauthor{\bsnm{Holloway}, \binits{A.K.}},
+\bauthor{\bsnm{Clamp}, \binits{M.}},
+\bauthor{\bsnm{Gnerre}, \binits{S.}},
+\bauthor{\bsnm{Alföldi}, \binits{J.}},
+\bauthor{\bsnm{Beal}, \binits{K.}},
+\bauthor{\bsnm{Chang}, \binits{J.}},
+\bauthor{\bsnm{Clawson}, \binits{H.}},
+\bauthor{\bsnm{Cuff}, \binits{J.}},
+\bauthor{\bsnm{Palma}, \binits{F.D.}},
+\bauthor{\bsnm{Fitzgerald}, \binits{S.}},
+\bauthor{\bsnm{Flicek}, \binits{P.}},
+\bauthor{\bsnm{Guttman}, \binits{M.}},
+\bauthor{\bsnm{Hubisz}, \binits{M.J.}},
+\bauthor{\bsnm{Jaffe}, \binits{D.B.}},
+\bauthor{\bsnm{Jungreis}, \binits{I.}},
+\bauthor{\bsnm{Kent}, \binits{W.J.}},
+\bauthor{\bsnm{Kostka}, \binits{D.}},
+\bauthor{\bsnm{Lara}, \binits{M.}},
+\bauthor{\bsnm{Martins}, \binits{A.L.}},
+\bauthor{\bsnm{Massingham}, \binits{T.}},
+\bauthor{\bsnm{Moltke}, \binits{I.}},
+\bauthor{\bsnm{Raney}, \binits{B.J.}},
+\bauthor{\bsnm{Rasmussen}, \binits{M.D.}},
+\bauthor{\bsnm{Robinson}, \binits{J.}},
+\bauthor{\bsnm{Stark}, \binits{A.}},
+\bauthor{\bsnm{Vilella}, \binits{A.J.}},
+\bauthor{\bsnm{Wen}, \binits{J.}},
+\bauthor{\bsnm{Xie}, \binits{X.}},
+\bauthor{\bsnm{Zody}, \binits{M.C.}},
+\bauthor{\bsnm{Baldwin}, \binits{J.}},
+\bauthor{\bsnm{Bloom}, \binits{T.}},
+\bauthor{\bsnm{Chin}, \binits{C.W.}},
+\bauthor{\bsnm{Heiman}, \binits{D.}},
+\bauthor{\bsnm{Nicol}, \binits{R.}},
+\bauthor{\bsnm{Nusbaum}, \binits{C.}},
+\bauthor{\bsnm{Young}, \binits{S.}},
+\bauthor{\bsnm{Wilkinson}, \binits{J.}},
+\bauthor{\bsnm{Worley}, \binits{K.C.}},
+\bauthor{\bsnm{Kovar}, \binits{C.L.}},
+\bauthor{\bsnm{Muzny}, \binits{D.M.}},
+\bauthor{\bsnm{Gibbs}, \binits{R.A.}},
+\bauthor{\bsnm{Cree}, \binits{A.}},
+\bauthor{\bsnm{Dihn}, \binits{H.H.}},
+\bauthor{\bsnm{Fowler}, \binits{G.}},
+\bauthor{\bsnm{Jhangiani}, \binits{S.}},
+\bauthor{\bsnm{Joshi}, \binits{V.}},
+\bauthor{\bsnm{Lee}, \binits{S.}},
+\bauthor{\bsnm{Lewis}, \binits{L.R.}},
+\bauthor{\bsnm{Nazareth}, \binits{L.V.}},
+\bauthor{\bsnm{Okwuonu}, \binits{G.}},
+\bauthor{\bsnm{Santibanez}, \binits{J.}},
+\bauthor{\bsnm{Warren}, \binits{W.C.}},
+\bauthor{\bsnm{Mardis}, \binits{E.R.}},
+\bauthor{\bsnm{Weinstock}, \binits{G.M.}},
+\bauthor{\bsnm{Wilson}, \binits{R.K.}},
+\bauthor{\bsnm{Delehaunty}, \binits{K.}},
+\bauthor{\bsnm{Dooling}, \binits{D.}},
+\bauthor{\bsnm{Fronik}, \binits{C.}},
+\bauthor{\bsnm{Fulton}, \binits{L.}},
+\bauthor{\bsnm{Fulton}, \binits{B.}},
+\bauthor{\bsnm{Graves}, \binits{T.}},
+\bauthor{\bsnm{Minx}, \binits{P.}},
+\bauthor{\bsnm{Sodergren}, \binits{E.}},
+\bauthor{\bsnm{Birney}, \binits{E.}},
+\bauthor{\bsnm{Margulies}, \binits{E.H.}},
+\bauthor{\bsnm{Herrero}, \binits{J.}},
+\bauthor{\bsnm{Green}, \binits{E.D.}},
+\bauthor{\bsnm{Haussler}, \binits{D.}},
+\bauthor{\bsnm{Siepel}, \binits{A.}},
+\bauthor{\bsnm{Goldman}, \binits{N.}},
+\bauthor{\bsnm{Pollard}, \binits{K.S.}},
+\bauthor{\bsnm{Pedersen}, \binits{J.S.}},
+\bauthor{\bsnm{Lander}, \binits{E.S.}},
+\bauthor{\bsnm{Kellis}, \binits{M.}}:
+\batitle{{A high-resolution map of human evolutionary constraint using 29
+  mammals}}.
+\bjtitle{Nature}
+\bvolume{478}(\bissue{7370}),
+\bfpage{476}--\blpage{482}
+(\byear{2011}).
+doi:\doiurl{10.1038/nature10530}
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}
+
+\newcommand{\BMCxmlcomment}[1]{}
+
+\BMCxmlcomment{
+
+<refgrp>
+
+<bibl id="B1">
+  <title><p>{The FASTG Format Specification (v1.00). http}</p></title>
+  <aug>
+    <au><snm>Jaffe</snm><fnm>DB</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <pubdate>2012</pubdate>
+  <url>http://fastg.sourceforge.net/FASTG_Spec_v1.00.pdf</url>
+</bibl>
+
+<bibl id="B2">
+  <title><p>{Accepted input formats}</p></title>
+  <aug>
+    <au><cnm>NCBI</cnm></au>
+  </aug>
+  <pubdate>Accessed: 2015-08-06</pubdate>
+  <url>http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml</url>
+</bibl>
+
+<bibl id="B3">
+  <title><p>{Abbreviations and symbols for nucleic acids, polynucleotides, and
+  their constituents}</p></title>
+  <aug>
+    <au><snm>Comm</snm><fnm>IUPAC IUB</fnm></au>
+  </aug>
+  <source>Biochemistry</source>
+  <publisher>ACS Publications</publisher>
+  <pubdate>1970</pubdate>
+  <volume>9</volume>
+  <issue>20</issue>
+  <fpage>4022</fpage>
+  <lpage>-4027</lpage>
+</bibl>
+
+<bibl id="B4">
+  <title><p>{The {B}ioperl toolkit: {P}erl modules for the life
+  sciences.}</p></title>
+  <aug>
+    <au><snm>Stajich</snm><fnm>J. E.</fnm></au>
+    <au><snm>Block</snm><fnm>D.</fnm></au>
+    <au><snm>Boulez</snm><fnm>K.</fnm></au>
+    <au><snm>Brenner</snm><fnm>S. E.</fnm></au>
+    <au><snm>Chervitz</snm><fnm>S. A.</fnm></au>
+    <au><snm>Dagdigian</snm><fnm>C.</fnm></au>
+    <au><snm>Fuellen</snm><fnm>G.</fnm></au>
+    <au><snm>Gilbert</snm><fnm>J. G.</fnm></au>
+    <au><snm>Korf</snm><fnm>I.</fnm></au>
+    <au><snm>Lapp</snm><fnm>H.</fnm></au>
+    <au><snm>Lehvaslaiho</snm><fnm>H.</fnm></au>
+    <au><snm>Matsalla</snm><fnm>C.</fnm></au>
+    <au><snm>Mungall</snm><fnm>C. J.</fnm></au>
+    <au><snm>Osborne</snm><fnm>B. I.</fnm></au>
+    <au><snm>Pocock</snm><fnm>M. R.</fnm></au>
+    <au><snm>Schattner</snm><fnm>P.</fnm></au>
+    <au><snm>Senger</snm><fnm>M.</fnm></au>
+    <au><snm>Stein</snm><fnm>L. D.</fnm></au>
+    <au><snm>Stupka</snm><fnm>E.</fnm></au>
+    <au><snm>Wilkinson</snm><fnm>M. D.</fnm></au>
+    <au><snm>Birney</snm><fnm>E.</fnm></au>
+  </aug>
+  <source>Genome Res</source>
+  <pubdate>2002</pubdate>
+  <volume>12</volume>
+  <issue>10</issue>
+  <fpage>1611</fpage>
+  <lpage>-8</lpage>
+</bibl>
+
+<bibl id="B5">
+  <title><p>{The generic genome browser: a building block for a model organism
+  system database.}</p></title>
+  <aug>
+    <au><snm>Stein</snm><fnm>L. D.</fnm></au>
+    <au><snm>Mungall</snm><fnm>C.</fnm></au>
+    <au><snm>Shu</snm><fnm>S.</fnm></au>
+    <au><snm>Caudy</snm><fnm>M.</fnm></au>
+    <au><snm>Mangone</snm><fnm>M.</fnm></au>
+    <au><snm>Day</snm><fnm>A.</fnm></au>
+    <au><snm>Nickerson</snm><fnm>E.</fnm></au>
+    <au><snm>Stajich</snm><fnm>J. E.</fnm></au>
+    <au><snm>Harris</snm><fnm>T. W.</fnm></au>
+    <au><snm>Arva</snm><fnm>A.</fnm></au>
+    <au><snm>Lewis</snm><fnm>S.</fnm></au>
+  </aug>
+  <source>Genome Res</source>
+  <pubdate>2002</pubdate>
+  <volume>12</volume>
+  <issue>10</issue>
+  <fpage>1599</fpage>
+  <lpage>-610</lpage>
+</bibl>
+
+<bibl id="B6">
+  <title><p>{Disentangling the effects of demography and selection in human
+  history.}</p></title>
+  <aug>
+    <au><snm>Stajich</snm><fnm>JE</fnm></au>
+    <au><snm>Hahn</snm><fnm>MW</fnm></au>
+  </aug>
+  <source>Molecular biology and evolution</source>
+  <pubdate>2005</pubdate>
+  <volume>22</volume>
+  <issue>1</issue>
+  <fpage>63</fpage>
+  <lpage>-73</lpage>
+  <url>http://dx.doi.org/10.1093/molbev/msh252</url>
+</bibl>
+
+<bibl id="B7">
+  <title><p>{EMBOSS: the European Molecular Biology Open Software
+  Suite}</p></title>
+  <aug>
+    <au><snm>Rice</snm><fnm>P</fnm></au>
+    <au><snm>Longden</snm><fnm>I</fnm></au>
+    <au><snm>Bleasby</snm><fnm>A</fnm></au>
+  </aug>
+  <source>Trends in genetics : TIG</source>
+  <pubdate>2000</pubdate>
+  <volume>16</volume>
+  <issue>6</issue>
+  <fpage>276—277</fpage>
+  <url>http://dx.doi.org/10.1016/S0168-9525(00)02024-2</url>
+</bibl>
+
+<bibl id="B8">
+  <title><p>{seqtk}</p></title>
+  <aug>
+    <au><snm>Li</snm><fnm>H.</fnm></au>
+  </aug>
+  <source>GitHub repository</source>
+  <publisher>GitHub</publisher>
+  <pubdate>2013</pubdate>
+  <url>https://github.com/lh3/seqtk</url>
+</bibl>
+
+<bibl id="B9">
+  <title><p>{Trimmomatic: a flexible trimmer for Illumina sequence
+  data}</p></title>
+  <aug>
+    <au><snm>Bolger</snm><fnm>AM</fnm></au>
+    <au><snm>Lohse</snm><fnm>M</fnm></au>
+    <au><snm>Usadel</snm><fnm>B</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford Univ Press</publisher>
+  <pubdate>2014</pubdate>
+  <fpage>btu170</fpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>{Fast gapped-read alignment with Bowtie 2}</p></title>
+  <aug>
+    <au><snm>Langmead</snm><fnm>B</fnm></au>
+    <au><snm>Salzberg</snm><fnm>SL</fnm></au>
+  </aug>
+  <source>Nature methods</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2012</pubdate>
+  <volume>9</volume>
+  <issue>4</issue>
+  <fpage>357</fpage>
+  <lpage>-359</lpage>
+</bibl>
+
+<bibl id="B11">
+  <title><p>{A high-resolution map of human evolutionary constraint using 29
+  mammals}</p></title>
+  <aug>
+    <au><snm>Lindblad Toh</snm><fnm>K</fnm></au>
+    <au><snm>Garber</snm><fnm>M</fnm></au>
+    <au><snm>Zuk</snm><fnm>O</fnm></au>
+    <au><snm>Lin</snm><fnm>MF</fnm></au>
+    <au><snm>Parker</snm><fnm>BJ</fnm></au>
+    <au><snm>Washietl</snm><fnm>S</fnm></au>
+    <au><snm>Kheradpour</snm><fnm>P</fnm></au>
+    <au><snm>Ernst</snm><fnm>J</fnm></au>
+    <au><snm>Jordan</snm><fnm>G</fnm></au>
+    <au><snm>Mauceli</snm><fnm>E</fnm></au>
+    <au><snm>Ward</snm><fnm>LD</fnm></au>
+    <au><snm>Lowe</snm><fnm>CB</fnm></au>
+    <au><snm>Holloway</snm><fnm>AK</fnm></au>
+    <au><snm>Clamp</snm><fnm>M</fnm></au>
+    <au><snm>Gnerre</snm><fnm>S</fnm></au>
+    <au><snm>Alföldi</snm><fnm>J</fnm></au>
+    <au><snm>Beal</snm><fnm>K</fnm></au>
+    <au><snm>Chang</snm><fnm>J</fnm></au>
+    <au><snm>Clawson</snm><fnm>H</fnm></au>
+    <au><snm>Cuff</snm><fnm>J</fnm></au>
+    <au><snm>Palma</snm><fnm>FD</fnm></au>
+    <au><snm>Fitzgerald</snm><fnm>S</fnm></au>
+    <au><snm>Flicek</snm><fnm>P</fnm></au>
+    <au><snm>Guttman</snm><fnm>M</fnm></au>
+    <au><snm>Hubisz</snm><fnm>MJ</fnm></au>
+    <au><snm>Jaffe</snm><fnm>DB</fnm></au>
+    <au><snm>Jungreis</snm><fnm>I</fnm></au>
+    <au><snm>Kent</snm><fnm>WJ</fnm></au>
+    <au><snm>Kostka</snm><fnm>D</fnm></au>
+    <au><snm>Lara</snm><fnm>M</fnm></au>
+    <au><snm>Martins</snm><fnm>AL</fnm></au>
+    <au><snm>Massingham</snm><fnm>T</fnm></au>
+    <au><snm>Moltke</snm><fnm>I</fnm></au>
+    <au><snm>Raney</snm><fnm>BJ</fnm></au>
+    <au><snm>Rasmussen</snm><fnm>MD</fnm></au>
+    <au><snm>Robinson</snm><fnm>J</fnm></au>
+    <au><snm>Stark</snm><fnm>A</fnm></au>
+    <au><snm>Vilella</snm><fnm>AJ</fnm></au>
+    <au><snm>Wen</snm><fnm>J</fnm></au>
+    <au><snm>Xie</snm><fnm>X</fnm></au>
+    <au><snm>Zody</snm><fnm>MC</fnm></au>
+    <au><snm>Baldwin</snm><fnm>J</fnm></au>
+    <au><snm>Bloom</snm><fnm>T</fnm></au>
+    <au><snm>Chin</snm><fnm>CW</fnm></au>
+    <au><snm>Heiman</snm><fnm>D</fnm></au>
+    <au><snm>Nicol</snm><fnm>R</fnm></au>
+    <au><snm>Nusbaum</snm><fnm>C</fnm></au>
+    <au><snm>Young</snm><fnm>S</fnm></au>
+    <au><snm>Wilkinson</snm><fnm>J</fnm></au>
+    <au><snm>Worley</snm><fnm>KC</fnm></au>
+    <au><snm>Kovar</snm><fnm>CL</fnm></au>
+    <au><snm>Muzny</snm><fnm>DM</fnm></au>
+    <au><snm>Gibbs</snm><fnm>RA</fnm></au>
+    <au><snm>Cree</snm><fnm>A</fnm></au>
+    <au><snm>Dihn</snm><fnm>HH</fnm></au>
+    <au><snm>Fowler</snm><fnm>G</fnm></au>
+    <au><snm>Jhangiani</snm><fnm>S</fnm></au>
+    <au><snm>Joshi</snm><fnm>V</fnm></au>
+    <au><snm>Lee</snm><fnm>S</fnm></au>
+    <au><snm>Lewis</snm><fnm>LR</fnm></au>
+    <au><snm>Nazareth</snm><fnm>LV</fnm></au>
+    <au><snm>Okwuonu</snm><fnm>G</fnm></au>
+    <au><snm>Santibanez</snm><fnm>J</fnm></au>
+    <au><snm>Warren</snm><fnm>WC</fnm></au>
+    <au><snm>Mardis</snm><fnm>ER</fnm></au>
+    <au><snm>Weinstock</snm><fnm>GM</fnm></au>
+    <au><snm>Wilson</snm><fnm>RK</fnm></au>
+    <au><snm>Delehaunty</snm><fnm>K</fnm></au>
+    <au><snm>Dooling</snm><fnm>D</fnm></au>
+    <au><snm>Fronik</snm><fnm>C</fnm></au>
+    <au><snm>Fulton</snm><fnm>L</fnm></au>
+    <au><snm>Fulton</snm><fnm>B</fnm></au>
+    <au><snm>Graves</snm><fnm>T</fnm></au>
+    <au><snm>Minx</snm><fnm>P</fnm></au>
+    <au><snm>Sodergren</snm><fnm>E</fnm></au>
+    <au><snm>Birney</snm><fnm>E</fnm></au>
+    <au><snm>Margulies</snm><fnm>EH</fnm></au>
+    <au><snm>Herrero</snm><fnm>J</fnm></au>
+    <au><snm>Green</snm><fnm>ED</fnm></au>
+    <au><snm>Haussler</snm><fnm>D</fnm></au>
+    <au><snm>Siepel</snm><fnm>A</fnm></au>
+    <au><snm>Goldman</snm><fnm>N</fnm></au>
+    <au><snm>Pollard</snm><fnm>KS</fnm></au>
+    <au><snm>Pedersen</snm><fnm>JS</fnm></au>
+    <au><snm>Lander</snm><fnm>ES</fnm></au>
+    <au><snm>Kellis</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Nature</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2011</pubdate>
+  <volume>478</volume>
+  <issue>7370</issue>
+  <fpage>476</fpage>
+  <lpage>-482</lpage>
+  <url>http://dx.doi.org/10.1038/nature10530</url>
+</bibl>
+
+</refgrp>
+} % end of \BMCxmlcomment

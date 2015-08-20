@@ -1,0 +1,83 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: bmc_article.aux
+The style file: bmc-mathphys.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bmc_article.bib
+Warning--entry type for "FASTAformat" isn't style-file defined
+--line 16 of file bmc_article.bib
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--"{Accepted" isn't a brace-balanced string for entry FASTAformat
+while executing--line 2686 of file bmc-mathphys.bst
+Warning--"{Accepted" isn't a brace-balanced string for entry FASTAformat
+while executing--line 2686 of file bmc-mathphys.bst
+Warning--"{Accepted" isn't a brace-balanced string for entry FASTAformat
+while executing--line 2686 of file bmc-mathphys.bst
+Warning--"formats}" isn't a brace-balanced string for entry FASTAformat
+while executing--line 2686 of file bmc-mathphys.bst
+Warning--"formats}" isn't a brace-balanced string for entry FASTAformat
+while executing--line 2686 of file bmc-mathphys.bst
+Warning--"FORMATS}" isn't a brace-balanced string for entry FASTAformat
+while executing--line 2686 of file bmc-mathphys.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 11 entries,
+            7128 wiz_defined-function locations,
+            1200 strings with 12827 characters,
+and the built_in function-call counts, 125912 in all, are:
+= -- 15722
+> -- 773
+< -- 329
++ -- 4117
+- -- 292
+* -- 10750
+:= -- 24725
+add.period$ -- 14
+call.type$ -- 11
+change.case$ -- 201
+chr.to.int$ -- 494
+cite$ -- 11
+duplicate$ -- 1838
+empty$ -- 7534
+format.name$ -- 1242
+if$ -- 27246
+int.to.chr$ -- 1
+int.to.str$ -- 30
+missing$ -- 574
+newline$ -- 560
+num.names$ -- 55
+pop$ -- 846
+preamble$ -- 1
+purify$ -- 50
+quote$ -- 22
+skip$ -- 7125
+stack$ -- 0
+substring$ -- 18560
+swap$ -- 554
+text.length$ -- 166
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 433
+warning$ -- 0
+while$ -- 671
+width$ -- 0
+write$ -- 965
+(There were 7 warnings)
