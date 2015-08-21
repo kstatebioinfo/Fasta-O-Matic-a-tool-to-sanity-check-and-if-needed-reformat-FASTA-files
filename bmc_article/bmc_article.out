@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section*.1}{Abstract}{}% 1
+\BOOKMARK [2][-]{subsection.0.1}{FASTA file format specifications versus recommendations}{section*.1}% 2
+\BOOKMARK [2][-]{subsection.0.2}{Customizing FASTA files to ensure that information is properly interpreted by downstream tools}{section*.1}% 3
+\BOOKMARK [2][-]{subsection.0.3}{Existing tools}{section*.1}% 4
+\BOOKMARK [1][-]{section.1}{Implementation}{}% 5
+\BOOKMARK [2][-]{subsection.1.1}{Portability}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.2}{Automate where appropriate}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.3}{Workflow integration}{section.1}% 8
+\BOOKMARK [1][-]{section.2}{Results}{}% 9
+\BOOKMARK [2][-]{subsection.2.1}{Data}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.2}{Reformatting tests}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.3}{Comparison between results}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{Conclusions}{}% 13
+\BOOKMARK [1][-]{section.4}{Availability and requirements}{}% 14

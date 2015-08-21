@@ -55,7 +55,8 @@
 \bibitem{FASTAformat}
 \begin{botherref}
 \oauthor{\bsnm{NCBI}}:
-{Accepted Input Formats}.
+{Accepted input formats}
+(Accessed: 2015-08-06).
 \url{http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml}
 \end{botherref}
 \endbibitem
@@ -161,10 +162,7 @@ doi:\doiurl{10.1016/s0168-9525(00)02024-2}
 %%% 8
 \bibitem{Li2013}
 \begin{botherref}
-\oauthor{\bsnm{Li}, \binits{H.}}:
-{seqtk}.
-GitHub
-(2013).
+Li, H., seqtk GitHub repository, 4feb6e81444ab6bc44139dd3a125068f81ae4ad8.
 \url{https://github.com/lh3/seqtk}
 \end{botherref}
 \endbibitem
@@ -427,13 +425,8 @@ doi:\doiurl{10.1038/nature10530}
 </bibl>
 
 <bibl id="B8">
-  <title><p>{seqtk}</p></title>
-  <aug>
-    <au><snm>Li</snm><fnm>H.</fnm></au>
-  </aug>
-  <source>GitHub repository</source>
-  <publisher>GitHub</publisher>
-  <pubdate>2013</pubdate>
+  <title><p>Li, H., seqtk GitHub repository,
+  4feb6e81444ab6bc44139dd3a125068f81ae4ad8</p></title>
   <url>https://github.com/lh3/seqtk</url>
 </bibl>
 

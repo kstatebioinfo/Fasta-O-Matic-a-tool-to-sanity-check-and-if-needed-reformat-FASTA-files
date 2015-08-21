@@ -20,64 +20,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bmc_article.bib
-Warning--entry type for "FASTAformat" isn't style-file defined
---line 16 of file bmc_article.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--"{Accepted" isn't a brace-balanced string for entry FASTAformat
-while executing--line 2686 of file bmc-mathphys.bst
-Warning--"{Accepted" isn't a brace-balanced string for entry FASTAformat
-while executing--line 2686 of file bmc-mathphys.bst
-Warning--"{Accepted" isn't a brace-balanced string for entry FASTAformat
-while executing--line 2686 of file bmc-mathphys.bst
-Warning--"formats}" isn't a brace-balanced string for entry FASTAformat
-while executing--line 2686 of file bmc-mathphys.bst
-Warning--"formats}" isn't a brace-balanced string for entry FASTAformat
-while executing--line 2686 of file bmc-mathphys.bst
-Warning--"FORMATS}" isn't a brace-balanced string for entry FASTAformat
-while executing--line 2686 of file bmc-mathphys.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 11 entries,
             7128 wiz_defined-function locations,
-            1200 strings with 12827 characters,
-and the built_in function-call counts, 125912 in all, are:
-= -- 15722
-> -- 773
-< -- 329
-+ -- 4117
-- -- 292
-* -- 10750
-:= -- 24725
-add.period$ -- 14
+            1197 strings with 12891 characters,
+and the built_in function-call counts, 108526 in all, are:
+= -- 12169
+> -- 763
+< -- 325
++ -- 1661
+- -- 287
+* -- 10548
+:= -- 21832
+add.period$ -- 13
 call.type$ -- 11
-change.case$ -- 201
+change.case$ -- 191
 chr.to.int$ -- 494
 cite$ -- 11
-duplicate$ -- 1838
-empty$ -- 7534
-format.name$ -- 1242
-if$ -- 27246
+duplicate$ -- 1833
+empty$ -- 7578
+format.name$ -- 1230
+if$ -- 22617
 int.to.chr$ -- 1
 int.to.str$ -- 30
-missing$ -- 574
-newline$ -- 560
-num.names$ -- 55
-pop$ -- 846
+missing$ -- 576
+newline$ -- 552
+num.names$ -- 50
+pop$ -- 858
 preamble$ -- 1
 purify$ -- 50
 quote$ -- 22
-skip$ -- 7125
+skip$ -- 4874
 stack$ -- 0
-substring$ -- 18560
-swap$ -- 554
-text.length$ -- 166
-text.prefix$ -- 0
+substring$ -- 17192
+swap$ -- 549
+text.length$ -- 161
+text.prefix$ -- 1
 top$ -- 0
-type$ -- 433
+type$ -- 434
 warning$ -- 0
-while$ -- 671
+while$ -- 658
 width$ -- 0
-write$ -- 965
-(There were 7 warnings)
+write$ -- 954
